@@ -36,3 +36,30 @@ total_var = StringVar()
 total_entry = ttk.Entry(win, width=63, textvariable=total_var)
 total_entry.place(x=100, y=240)
 
+
+# -------------------- Combo Boxes----------------------------
+
+from_var = StringVar()
+from_comb = ttk.Combobox(win, width=25, textvariable=from_var)
+from_comb['values'] = ("Afghani","Canadian Dollar","Chinese Yuan","Euro","Indian Rupee","Israeli New Shekel","Kuwaiti Dinar","Pakistani rupee","Russian Rubble","US Dollar")
+from_comb.current(4)
+from_comb.place(x=75, y=80)
+
+to_var = StringVar()
+to_comb = ttk.Combobox(win, width=25, textvariable=to_var)
+to_comb["values"] = ("Afghani","Canadian Dollar","Chinese Yuan","Euro","Indian Rupee","Israeli New Shekel","Kuwaiti Dinar","Pakistani rupee","Russian Rubble","US Dollar")
+to_comb.current(9)
+to_comb.place(x=350, y=80)
+
+
+# --------------------- Buttons ------------------------------
+
+convert_button = tk.Button(win, text="Convert", width=18,font="Arial 12 bold", border=0, bg="red", fg="white", command=convert)
+convert_button.place(x=100,y=280)
+
+exit_button = tk.Button(win, text="Quit", width=18,font="Arial 12 bold", border=0, bg="red", fg="white", command=quit)
+exit_button.place(x=300, y=280)
+
+
+win.mainloop()
+
