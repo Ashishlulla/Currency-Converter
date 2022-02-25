@@ -8,6 +8,42 @@ win.geometry("590x350")
 win.resizable(0,0)
 win.config(bg="#E8E8E8")
 
+# ------------------------------- Functionality -------------------------
+
+def convert():
+    amount = float(amount_var.get())
+    currency1 = from_var.get()
+    currency2 = to_var.get()
+    print(amount, currency1, currency2)
+
+    if currency1 == "Afghani":
+        if currency2 == "Canadian Dollar":
+            total = amount*0.014
+            total_var.set(total)
+        elif currency2 == "Chinese Yuan":
+            total = amount*0.069
+            total_var.set(total)
+        elif currency2 == "Euro":
+            total = amount*0.0096
+            total_var.set(total)
+        elif currency2 == "Indian Rupee":
+            total = amount*0.81
+            total_var.set(total)
+        elif currency2 == "Israeli New Shekel":
+            total = amount*0.035
+            total_var.set(total)
+        elif currency2 == "Kuwaiti Dinar":
+            total = amount*0.0033
+            total_var.set(total)
+        elif currency2 == "Pakistani rupee":
+            total = amount*1.92
+            total_var.set(total)
+        elif currency2 =="Russian Rubble":
+            total = amount*0.86
+            total_var.set(total)
+        elif currency2 == "US Dollar":
+            total = amount*0.011
+            total_var.set(total)
 
 # -------------------- Labels ----------------------------
 
