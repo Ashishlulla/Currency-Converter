@@ -129,6 +129,35 @@ def convert():
             total = amount*1.14
             total_var.set(total)
 
+   elif currency1 == "Indian Rupee":
+        if currency2 == "Afghani":
+            total = amount*1.23
+            total_var.set(total)
+        elif currency2 == "Canadian Dollar":
+            total = amount*0.017
+            total_var.set(total)
+        elif currency2 == "Chinese Yuan":
+            total = amount*0.085
+            total_var.set(total)
+        elif currency2 == "Euro":
+            total = amount*0.012
+            total_var.set(total)
+        elif currency2 == "Israeli New Shekel":
+            total = amount*0.043
+            total_var.set(total)
+        elif currency2 == "Kuwaiti Dinar":
+            total = amount*0.0040
+            total_var.set(total)
+        elif currency2 == "Pakistani rupee":
+            total = amount*2.37
+            total_var.set(total)
+        elif currency2 =="Russian Rubble":
+            total = amount*1.06
+            total_var.set(total)
+        elif currency2 == "US Dollar":
+            total = amount*0.013
+            total_var.set(total)         
+            
 # -------------------- Labels ----------------------------
 
 from_label = tk.Label(win,text="From:", fg="#80322E", font="Arial 12 bold", bg="#E8E8E8")
