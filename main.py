@@ -72,7 +72,34 @@ def convert():
         elif currency2 == "US Dollar":
             total = amount*0.79
             total_var.set(total)
-  
+    elif currency1 == "Chinese Yuan":
+        if currency2 == "Afghani":
+            total = amount*14.57
+            total_var.set(total)
+        elif currency2 == "Canadian Dollar":
+            total = amount*0.20
+            total_var.set(total)
+        elif currency2 == "Euro":
+            total = amount*0.14
+            total_var.set(total)
+        elif currency2 == "Indian Rupee":
+            total = amount*11.80
+            total_var.set(total)
+        elif currency2 == "Israeli New Shekel":
+            total = amount*0.51
+            total_var.set(total)
+        elif currency2 == "Kuwaiti Dinar":
+            total = amount*0.048
+            total_var.set(total)
+        elif currency2 == "Pakistani rupee":
+            total = amount*27.97
+            total_var.set(total)
+        elif currency2 =="Russian Rubble":
+            total = amount*12.50
+            total_var.set(total)
+        elif currency2 == "US Dollar":
+            total = amount*0.16
+            total_var.set(total)
 
 # -------------------- Labels ----------------------------
 
