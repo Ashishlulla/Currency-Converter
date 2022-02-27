@@ -296,6 +296,10 @@ def convert():
         elif currency2 == "Pakistani rupee":
             total = amount*175.35
             total_var.set(total)
+    
+def quit():
+    win.destroy()
+
             
 # -------------------- Labels ----------------------------
 
